@@ -8,7 +8,7 @@ function(event, ...)
 
   local isTanking, status, threatpct, rawthreatpct, threatvalue = UnitDetailedThreatSituation(pumper, "target") 
 
-  return threatpct ~= nil and threatpct > 90
+  return threatpct ~= nil and threatpct > 80
 end
 
 -- Untrigger
@@ -21,5 +21,5 @@ function(event, ...)
 
   local isTanking, status, threatpct, rawthreatpct, threatvalue = UnitDetailedThreatSituation(pumper, "target") 
 
-  return threatpct ~= nil and threatpct < 90
+  return threatpct ~= nil and threatpct < 80
 end
